@@ -13,4 +13,10 @@ Palindrome.java#10
 ```java
     for(int i=0; i<length; i++)
 ```
-Palindrome.java
+
+* On second approach I realised there was no need to run across all the array, just up to the half. By using integer division, both odd and even array lengths should be covered
+
+Palindrome.java#10
+```java
+    for(int i=0; i<length / 2; i++)
+```
