@@ -32,4 +32,15 @@ public class PalindromeTest {
     public void testNullCheckPalindrome() {
         new Palindrome().isPalindrome(null);
     }
+
+    // Max size we can test without JVM heap size tuning
+    @Test
+    public void testMaxSizePalindrome() {
+        // create a huge string alternating A and B characters
+        char ar1[] = new char[Integer.MAX_VALUE/4];
+        for(int i=0; i<ar1.length; i++) {
+            ar1[i] = (char) ((i%2)+65);
+        }        
+        assertTrue("is an HUGE VALID palindrome", new Palindrome().isPalindrome(new String(ar1)));
+    }
 }
