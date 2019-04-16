@@ -44,4 +44,4 @@ We can easily (and unaccurately due to GC calls) verify this fact by profiling e
 | Integer.MAX_VALUE/8  | 597           |
 | Integer.MAX_VALUE/16 | 413           |
 
-see: [src/test/java/com/test1/palindrome/PalindromeComplexityTest.java]
+see: [PalindromeComplexityTest.java](src/test/java/com/test1/palindrome/PalindromeComplexityTest.java)
