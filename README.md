@@ -28,6 +28,19 @@ Please, run the following command specifying a string argument
 [Palindrome.java#10](src/main/java/com/test1/palindrome/Palindrome.java)
 ```java
     for(int i=0; i<length / 2; i++)
+
+* This third trial was implemented using streams API, shorter, probably more readable, but since same algorithmic approach was used, no performance changes were achieved (empirically tested)
+
+[Palindrome.java#diff](src/main/java/com/test1/palindrome/Palindrome.java)
+```java
+-        int length = input.length();
+-        for(int i=0; i<length / 2; i++) {
+-            if(input.charAt(i) != input.charAt(length-1-i))
+-                return false;
+-        }
+-        return true;
++        return IntStream.range(0, input.length() / 2)
++                .allMatch(i -> input.charAt(i) == input.charAt(input.length() - i - 1));
 ```
 
 ### Alternatives considered

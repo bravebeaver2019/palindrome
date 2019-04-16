@@ -2,15 +2,13 @@ package com.test1.palindrome;
 
 import org.springframework.stereotype.Component;
 
+import java.util.stream.IntStream;
+
 @Component
 public class Palindrome {
 
     public boolean isPalindrome(String input) {
-        int length = input.length();
-        for(int i=0; i<length / 2; i++) { // improvement 1: only up to the half, note int division, should work for even and odd length strings
-            if(input.charAt(i) != input.charAt(length-1-i))
-                return false;
-        }
-        return true;
+        return IntStream.range(0, input.length() / 2)
+                .allMatch(i -> input.charAt(i) == input.charAt(input.length() - i - 1));
     }
 }
