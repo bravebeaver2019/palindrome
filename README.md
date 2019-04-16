@@ -18,14 +18,14 @@ Please, run the following command specifying a string argument
 ### Comments and improvements
 * On first attempt I ran across the whole string comparing each element with the mirrored one until I found a difference.
 
-src/main/java/com/test1/palindrome/Palindrome.java#10
+[Palindrome.java#10](src/main/java/com/test1/palindrome/Palindrome.java)
 ```java
     for(int i=0; i<length; i++)
 ```
 
 * On a second approach I realised there was no need to run across all the array, just up to the half. By using integer division, both odd and even array lengths should be covered
 
-src/main/java/com/test1/palindrome/Palindrome.java#10
+[Palindrome.java#10](src/main/java/com/test1/palindrome/Palindrome.java)
 ```java
     for(int i=0; i<length / 2; i++)
 ```
