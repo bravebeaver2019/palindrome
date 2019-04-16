@@ -28,6 +28,7 @@ Please, run the following command specifying a string argument
 [Palindrome.java#10](src/main/java/com/test1/palindrome/Palindrome.java)
 ```java
     for(int i=0; i<length / 2; i++)
+```
 
 * This third trial was implemented using streams API, shorter, probably more readable, but since same algorithmic approach was used, no performance changes were achieved (empirically tested)
 
