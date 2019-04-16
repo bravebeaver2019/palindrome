@@ -37,7 +37,7 @@ public class PalindromeTest {
     @Test
     public void testMaxSizePalindrome() {
         // create a huge string alternating A and B characters
-        char ar1[] = new char[Integer.MAX_VALUE/4];
+        char ar1[] = new char[Integer.MAX_VALUE/8];
         for(int i=0; i<ar1.length; i++) {
             ar1[i] = (char) ((i%2)+65);
         }        
