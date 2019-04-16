@@ -3,6 +3,12 @@
 ### Prerequisites
 In order to run this program, a java runtime environment must be installed (tested with version 8).
 
+### Building application
+Please, run the following command
+```bash
+./build
+```
+
 ### Running application
 Please, run the following command specifying a string argument
 ```bash
