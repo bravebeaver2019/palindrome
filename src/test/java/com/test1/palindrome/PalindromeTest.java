@@ -23,6 +23,16 @@ public class PalindromeTest {
     }
 
     @Test
+    public void testDoubleCharPalindrome() {
+        assertTrue("is a valid palindrome", new Palindrome().isPalindrome("OO"));
+    }
+
+    @Test
+    public void testSingleCharPalindrome() {
+        assertTrue("is a valid palindrome", new Palindrome().isPalindrome("O"));
+    }
+
+    @Test
     public void testEmptyPalindrome() {
         assertTrue("is a valid EMPTY palindrome", new Palindrome().isPalindrome(""));
     }

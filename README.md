@@ -45,3 +45,7 @@ We can easily (and unaccurately due to GC calls) verify this fact by profiling e
 | Integer.MAX_VALUE/16 | 413           |
 
 see: [PalindromeComplexityTest.java](src/test/java/com/test1/palindrome/PalindromeComplexityTest.java)
+
+### Things to do
+See what to do with white and non printable characters, see string encodings supported, currently tested in UTF-8.
+
